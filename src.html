@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Skipper Tipp</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Skipper Tipp</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/borehack/skipper-tipp">View the Project on GitHub <small>borehack/skipper-tipp</small></a></p>
+
+      </header>
+      
+      <section>
+        <h3>
+<a id="skipper-tipp" class="anchor" href="#skipper-tipp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Skipper Tipp.</h3>
+
+<p>Hier werden jede Menge Tipps für Skipper veröffentlicht. Für den praktischen Skipper Alltag und für die verschiedenen Prüfungen (SBF See, SBF Binnen, SRC, LRC Funkscheine).</p>
+
+<h3>
+<a id="src-funk-texte-lernen" class="anchor" href="#src-funk-texte-lernen" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SRC Funktexte lernen</h3>
+
+<p>SRC Beschränkt gültige Funkerlaubnis. Hier kannst du die Funktexte durch schreiben lernen. Es wird entweder der deutsche oder der englische Text angezeigt, du übersetzt den Text und nachdem du den Text auswertest werden die Texte verglichen und dir die Unterschiede dargestellt.</p>
+<p>Du kannst wählen ob du die Deutschen [DE] oder die Engischen [EN] Texte sehen willst und dann die jeweils andere Sprache in der Box eintragen. Wenn du die Auswertung studiert hast kannst du mit dem Button [nächste Frage] zur nächsten Frage wechseln. Es ist auch möglich mehrmals auf den Button [auswerten] zu klicken, dass heißt du kannst deine Übersetzung nochmal anpassen und danach nochmal auswerten um die Rechtschreibung zu vertiefen.</p>
+<p>In der Auswertung bedeutet
+<ol>
+<li>ein Text mit der Farbe <ins style="background:#e6ffe6;">grün unterschrichen</ins> : dieser Text wurde nicht eingegeben wird aber erwartet.</li>
+<li>ein Text mit der Farbe <del style="background:#ffe6e6;">rot durchgestrichen</del> : dieser Text wurde eingegeben wird aber nicht erwartet (zu viel oder falsch eingegeben).</li>
+<li>ein Text ohne Farbe : dieser Text ist richtig</li>
+</ol>
+<p>Es werden die offziellen Fragen an der deutschen SRC Prüfung von <a href="https://www.elwis.de/Freizeitschifffahrt/hinweise-sprechfunk-funkzeugnisse/RL-Funk-Anlage-7.pdf">www.elwis.de - RL-Funk-Anlage-7.pdf</a> verwendet.
+Diese Fragen werden auch an der Schweizer SRC Prüfung gestellt.</p>
+
+
+  <h4>Frage</h4>
+  
+  <select id="number" onChange="showQuestion()"><option>1</option>
+  
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  </select>
+  <select id="lang" onChange="showQuestion()"><option>DE</option><option>EN</option></select>
+  
+  <p id="src-text"></p>
+
+  <h4>Auswertung</h4>
+  <p id="src-diff"></p>
+  
+  <h4>Eingabe</h4>
+  <textarea cols="55" rows="3" id="src-actual"></textarea>
+  <br /><input type="button" onClick="srcCheck()" value="auswerten" />
+  <input type="button" onClick="srcNext()" value="nächste Frage" />
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Vokablen SRC</h3>
+<br />starke Schlagseite = heavy list
+<br />backbord = port side
+<br />rechtweisend Peilung = true bearing
+<br />rechtweisender Kurs = true course
+<br />underway from = unterwegs von
+<br />zuletzt gesehen auf Position = last seen in position
+<br />anzusteuern = approach
+<br />damaged rudder = Ruderschaden
+<br />später rechtsdrehend = veering later
+<br />zeitweise Sprühregen = drizzle at times
+<br />mehr als 2 sm Abstand = keep a berth of more than 2 nm
+<br />Verkehrstrennungsgebiet = traffic separation schema
+<br />Tieffahrwasserweg = deep water lane
+<br />Fahrwasser = Fairways
+<br />Seefahrer = mariners
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/borehack">borehack</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/srtexts.js"></script>
+    <script src="javascripts/diff_match_patch.js"></script>
+    <script src="javascripts/app.js"></script>
+    
+  </body>
+</html>
